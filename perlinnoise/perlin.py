@@ -9,6 +9,11 @@ import random
 from typing import Optional, List
 
 
+__all__ = [
+    'PerlinNoise',
+]
+
+
 class PerlinNoise:
 
     def __init__(self, seed: Optional[int]=None):
