@@ -16,7 +16,7 @@ __all__ = [
 
 class PerlinNoise:
 
-    def __init__(self, seed: Optional[int]=None):
+    def __init__(self, seed: Optional[int]=None) -> None:
         """ Initialize the permutation vector with the reference values
         """
         if seed is None:
@@ -86,7 +86,7 @@ class PerlinNoise:
 
     @staticmethod
     def _fade(t: float) -> float:
-        return t * t * t * (t * (t * 6 - 15) + 10)
+        return t * t * t * (t * (t * 6. - 15.) + 10.)
 
     @staticmethod
     def _lerp(t: float, a: float, b: float) -> float:
